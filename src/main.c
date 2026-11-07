@@ -1,7 +1,12 @@
-#include <stdio.h>
+#include "game.h"
+#include "snake.h"
 
-int main() {
-    char name[] = "John";
-    printf("Hello %s", name);
-    return 0;
+int main(void) {
+    GameState game_state = initialize_game_state();
+
+    run_game(&game_state);    
+
+    free_game_state(&game_state);
+
+    return;
 }
