@@ -1,5 +1,14 @@
-## Snake in C 
+# Snake in C
 
-Learning by doing. 
+The classic game of Snake, written in C to learn the language by building something real. This is a work in progress.
 
-Building the classic game Snake in C. 
+The code is split into small modules: `snake`, `map`, `collectible` and `game`, with shared types in `structs`.
+
+## Build
+
+```bash
+make build
+./main
+```
+
+Requires `gcc`.
